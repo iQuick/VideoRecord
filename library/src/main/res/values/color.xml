@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <color name="transparent">@android:color/transparent</color>
+
+    <color name="white">@android:color/white</color>
+    <color name="bg_cancel_up_glide">#66000000</color>
+    <color name="bg_cancel_loosen">#AFFE2D57</color>
+
+    <color name="pb_normal">#80EC37</color>
+    <color name="pb_loosen">#FE2D57</color>
+
+    <color name="record_text">#80EC37</color>
+    <color name="record_stroke">#262626</color>
+
+</resources>

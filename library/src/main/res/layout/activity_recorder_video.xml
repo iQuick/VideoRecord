@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="300dp">
+
+        <me.imli.lib_movierecorder.widget.VideoRecorderView
+            android:id="@+id/vr_record"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_loosen_record"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="100dp"
+            android:background="@color/bg_cancel_loosen"
+            android:padding="4dp"
+            android:text="@string/cancel_loosen"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/tv_up_glide_record"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:background="@color/bg_cancel_up_glide"
+            android:padding="4dp"
+            android:text="@string/cancel_up_glide"
+            android:textColor="@color/white" />
+
+        <me.imli.lib_magicprogressbar.MagicProgressBar
+            android:id="@+id/pb_record"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_alignParentBottom="true"
+            android:progress="10"
+            app:mpb_fill_color="@color/pb_normal" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <me.imli.lib_movierecorder.widget.RecordButton
+            android:id="@+id/btn_record"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/btn_record_selector"
+            android:gravity="center"
+            android:text="@string/press_down_record"
+            android:textColor="@color/record_text"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+</LinearLayout>
